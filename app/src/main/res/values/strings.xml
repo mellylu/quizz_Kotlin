@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Quizz</string>
+    <string name="theme1">Solo leveling</string>
+    <string name="theme2">Tokyo revengers</string>
+    <string name="theme3">Attack on titan</string>
+    <string name="question1">Quel est le personnage principal ?</string>
+    <string name="question2">De qui est amoureux Takemichi ?</string>
+    <string name="question3">Qui possède le titan originel ?</string>
+    <string name="description1image1">Baek Yoonho</string>
+    <string name="description1image2">Chahae In</string>
+    <string name="description1image3">Sung Jinwoo</string>
+    <string name="description1image4">Choi Jongin</string>
+    <string name="description2image1">Hanita Tashiba</string>
+    <string name="description2image2">Emma Sano</string>
+    <string name="description2image3">Yuzuha Shiba</string>
+    <string name="description2image4">Mickey Sano</string>
+    <string name="description3image1">Armin Arlet</string>
+    <string name="description3image2">Annie Leonhart</string>
+    <string name="description3image3">Livai Ackerman</string>
+    <string name="description3image4">Eren Jager</string>
+    <string name="titre1">QCM sur Solo leveling</string>
+    <string name="titre2">QCM sur Tokyo revengers</string>
+    <string name="titre3">QCM sur SNK</string>
+    <string name="titreDefault">QCM</string>
+    <string name="response1">Sung Jinwoo</string>
+    <string name="response2">Hanita Tashiba</string>
+    <string name="response3">Eren Jager</string>
+</resources>
