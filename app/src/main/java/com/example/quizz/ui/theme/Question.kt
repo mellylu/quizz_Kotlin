@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -151,6 +152,7 @@ fun OptionStep(modifier : Modifier = Modifier, numQuizz : Int = 1, choix : Int =
         colors = ButtonDefaults.buttonColors(containerColor = Color.White),
         onClick = { if (numQuizz == 1 && response == response1 || numQuizz == 2 && response == response2 || numQuizz == 3 && response == response3) navController.navigate(Screen.ValidResponse.itineraire + "/" + numQuizz.toString()+ "/" + choix + "/" + nomChoix) else navController.navigate(Screen.ErrorResponse.itineraire + "/" + numQuizz.toString() + "/" + choix + "/" + nomChoix)},
         modifier = modifier
+            .testTag("$response")
     )
     {
         Column(
@@ -164,6 +166,7 @@ fun OptionStep(modifier : Modifier = Modifier, numQuizz : Int = 1, choix : Int =
 
             modifier = modifier.fillMaxSize()
                 .weight(1f)
+                .testTag("ChoiceImage$numQuizz-$response")
 
         )
         Text(text = stringResource(id = nomChoix), color = Color.Black)
